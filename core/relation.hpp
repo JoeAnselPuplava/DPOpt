@@ -9,11 +9,12 @@
 #include <unordered_map>
 #include <iostream>
 
-
-class SecureRelation {
+class SecureRelation
+{
 public:
     std::vector<std::vector<emp::Integer>> columns;
     std::vector<emp::Integer> flags;
+    std::vector<std::string> columnNames;
 
     // Constructor to initialize the relation with specified column count and row count
     SecureRelation() : SecureRelation(0, 0) {} // Default constructor
@@ -25,8 +26,8 @@ public:
     void sort_by_two_columns(int primary_column_index, int secondary_column_index);
 
     // Utility methods for bitonic sort
-    void bitonic_sort(int low, int high, bool ascending, std::vector<emp::Integer>& key_column);
-    void bitonic_merge(int low, int high, bool ascending, std::vector<emp::Integer>& key_column);
+    void bitonic_sort(int low, int high, bool ascending, std::vector<emp::Integer> &key_column);
+    void bitonic_merge(int low, int high, bool ascending, std::vector<emp::Integer> &key_column);
     void swap_rows(int i, int j, emp::Bit condition);
 
     // Goldreich's Bitonic Compaction methods:
@@ -38,30 +39,42 @@ public:
     void compact(int K);
 
     // Utility function to print the relation's details
-    void print_relation(const std::string& label) const;
+    void print_relation(const std::string &label) const;
+
+    // Function to create column names
+    void setColumnNames(const std::vector<std::string> &names);
+
+    // Function to add row data from csv
+    void addRow(const std::vector<std::string> &rowData, const int party);
 };
 
 // Implementations
 
-SecureRelation::SecureRelation(int column_count, int row_count) {
+SecureRelation::SecureRelation(int column_count, int row_count)
+{
     columns.resize(column_count, std::vector<emp::Integer>(row_count, emp::Integer(32, 0, emp::PUBLIC)));
     flags.resize(row_count, emp::Integer(1, 1, emp::PUBLIC));
 }
 
-void SecureRelation::sort_by_column(int column_index) {
-    if(column_index < 0 || column_index >= columns.size()) {
+void SecureRelation::sort_by_column(int column_index)
+{
+    if (column_index < 0 || column_index >= columns.size())
+    {
         std::cerr << "Error: Invalid column index!" << std::endl;
         return;
     }
     bitonic_sort(0, flags.size(), true, columns[column_index]);
 }
 
-void SecureRelation::sort_by_flag() {
+void SecureRelation::sort_by_flag()
+{
     bitonic_sort(0, flags.size(), true, flags);
 }
 
-void SecureRelation::bitonic_sort(int low, int high, bool ascending, std::vector<emp::Integer>& key_column) {
-    if (high <= 1) return;
+void SecureRelation::bitonic_sort(int low, int high, bool ascending, std::vector<emp::Integer> &key_column)
+{
+    if (high <= 1)
+        return;
 
     int mid = high / 2;
     bitonic_sort(low, mid, true, key_column);
@@ -69,21 +82,26 @@ void SecureRelation::bitonic_sort(int low, int high, bool ascending, std::vector
     bitonic_merge(low, high, ascending, key_column);
 }
 
-void SecureRelation::bitonic_merge(int low, int high, bool ascending, std::vector<emp::Integer>& key_column) {
-    if (high <= 1) return;
+void SecureRelation::bitonic_merge(int low, int high, bool ascending, std::vector<emp::Integer> &key_column)
+{
+    if (high <= 1)
+        return;
 
     int mid = high / 2;
-    for (int i = low; i < low + mid; i++) {
-        emp::Bit condition = (key_column[i] > key_column[i+mid]) == ascending;
-        swap_rows(i, i+mid, condition);
+    for (int i = low; i < low + mid; i++)
+    {
+        emp::Bit condition = (key_column[i] > key_column[i + mid]) == ascending;
+        swap_rows(i, i + mid, condition);
     }
 
     bitonic_merge(low, mid, ascending, key_column);
     bitonic_merge(low + mid, mid, ascending, key_column);
 }
 
-void SecureRelation::swap_rows(int i, int j, emp::Bit condition) {
-    for (auto& column : columns) {
+void SecureRelation::swap_rows(int i, int j, emp::Bit condition)
+{
+    for (auto &column : columns)
+    {
         emp::Integer temp = column[i];
         column[i] = emp::If(condition, column[j], column[i]);
         column[j] = emp::If(condition, temp, column[j]);
@@ -96,12 +114,15 @@ void SecureRelation::swap_rows(int i, int j, emp::Bit condition) {
 
 // Implementation of the Goldreich's Bitonic Compaction methods:
 
-void SecureRelation::sort_by_flag_goldreich() {
+void SecureRelation::sort_by_flag_goldreich()
+{
     goldreich_compaction(0, flags.size());
 }
 
-void SecureRelation::goldreich_compaction(int low, int high) {
-    if (high - low <= 1) return; // Base case
+void SecureRelation::goldreich_compaction(int low, int high)
+{
+    if (high - low <= 1)
+        return; // Base case
 
     int mid = (low + high) / 2;
     goldreich_compaction(low, mid);  // Recursively compact left half
@@ -109,27 +130,33 @@ void SecureRelation::goldreich_compaction(int low, int high) {
     goldreich_merge(low, mid, high); // Merge the two compacted halves
 }
 
-void SecureRelation::goldreich_merge(int low, int mid, int high) {
+void SecureRelation::goldreich_merge(int low, int mid, int high)
+{
     int i = mid - 1;
     int j = mid;
 
     // This process locates the end of the 1s in the left half (i) and the start of the 1s in the right half (j)
-    while (i >= low && j < high) {
+    while (i >= low && j < high)
+    {
         emp::Bit condition = (flags[i] < flags[j]);
         swap_rows(i, j, condition);
-        if (flags[i].reveal<int>() == 1) {
+        if (flags[i].reveal<int>() == 1)
+        {
             i--;
         }
-        if (flags[j].reveal<int>() == 1) {
+        if (flags[j].reveal<int>() == 1)
+        {
             j++;
         }
     }
 }
 
-//sort on two columns
-void SecureRelation::sort_by_two_columns(int primary_column_index, int secondary_column_index) {
-    if(primary_column_index < 0 || primary_column_index >= columns.size() || 
-       secondary_column_index < 0 || secondary_column_index >= columns.size()) {
+// sort on two columns
+void SecureRelation::sort_by_two_columns(int primary_column_index, int secondary_column_index)
+{
+    if (primary_column_index < 0 || primary_column_index >= columns.size() ||
+        secondary_column_index < 0 || secondary_column_index >= columns.size())
+    {
         std::cerr << "Error: Invalid column index!" << std::endl;
         return;
     }
@@ -138,14 +165,17 @@ void SecureRelation::sort_by_two_columns(int primary_column_index, int secondary
 }
 
 // Compaction function
-void SecureRelation::compact(int K) {
+void SecureRelation::compact(int K)
+{
     // First, sort the relation by the flag.
     sort_by_flag();
 
-    // Check if the relation has more than K rows. 
-    if (columns[0].size() > K) {
+    // Check if the relation has more than K rows.
+    if (columns[0].size() > K)
+    {
         // Resize each column to have only K rows.
-        for (auto& column : columns) {
+        for (auto &column : columns)
+        {
             column.resize(K);
         }
         // Resize the flags vector to have only K entries.
@@ -153,16 +183,53 @@ void SecureRelation::compact(int K) {
     }
 }
 
-// Helper function 
-void SecureRelation::print_relation(const std::string& label) const {
+// Helper function
+void SecureRelation::print_relation(const std::string &label) const
+// void SecureRelation::print_relation(const std::string &label, const int party) const
+{
     std::cout << label << "\n";
-    for (size_t row = 0; row < columns[0].size(); ++row) {
-        for (size_t col = 0; col < columns.size(); ++col) {
+    for (size_t row = 0; row < columns[0].size(); ++row)
+    {
+        for (size_t col = 0; col < columns.size(); ++col)
+        {
             std::cout << columns[col][row].reveal<int>() << "\t";
         }
         std::cout << "| Flag: " << flags[row].reveal<int>() << "\n";
     }
     std::cout << "\n";
+}
+
+// Saves the column names
+void SecureRelation::setColumnNames(const std::vector<std::string> &names)
+{
+    columnNames = names;
+    columns.resize(names.size()); // One column per name
+}
+
+// Add's data from csv to relation
+// Specify party
+void SecureRelation::addRow(const std::vector<std::string> &rowData, const int party)
+// void SecureRelation::addRow(const std::vector<std::string> &rowData, party ALICE)
+{
+    if (rowData.size() != columns.size())
+    {
+        std::cerr << "Error: rowData size doesn't match column count.\n";
+        return;
+    }
+
+    for (size_t i = 0; i < rowData.size(); ++i)
+    {
+        int value = std::stoi(rowData[i]); // Assumes CSV contains integers
+        // Put party variable
+        // std::cout << "This is party" << party << "\n";
+        // columns[i].push_back(emp::Integer(32, value, party));
+        columns[i].push_back(emp::Integer(32, value, emp::PUBLIC));
+        // columns[i].push_back(emp::Integer(32, value, emp::PUBLIC));
+    }
+
+    // flags.push_back(emp::Integer(1, 1, party)); // Default flag = 1
+    flags.push_back(emp::Integer(1, 1, emp::PUBLIC)); // Default flag = 1
+    // flags.push_back(emp::Integer(1, 1, emp::PUBLIC)); // Default flag = 1
 }
 
 #endif // RELATION_HPP

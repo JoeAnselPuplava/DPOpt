@@ -4,38 +4,80 @@
 #include <iostream>
 #include <chrono>
 
-
 using namespace emp;
 
 // Utility function to initialize a relation with random values
-void init_relation(SecureRelation& relation, int num_cols, int num_rows) {
-    for (int col = 0; col < num_cols; ++col) {
-        for (int row = 0; row < num_rows; ++row) {
-            relation.columns[col][row] = Integer(32, rand() % 10, ALICE);  // Random values
+void init_relation(SecureRelation &relation, int num_cols, int num_rows)
+{
+    for (int col = 0; col < num_cols; ++col)
+    {
+        for (int row = 0; row < num_rows; ++row)
+        {
+            relation.columns[col][row] = Integer(32, rand() % 10, ALICE); // Random values
         }
     }
 
-    for (int row = 0; row < num_rows; ++row) {
-        relation.flags[row] = Integer(1, 1, ALICE);  // Set all flags to 1 initially
+    for (int row = 0; row < num_rows; ++row)
+    {
+        relation.flags[row] = Integer(1, 1, ALICE); // Set all flags to 1 initially
     }
 }
+// void init_relation_from_csv(SecureRelation &relation, const std::string &filename, int num_cols, int num_rows, int party)
+// {
+//     std::ifstream file(filename);
+//     if (!file.is_open())
+//     {
+//         std::cerr << "Error: Could not open CSV file " << filename << std::endl;
+//         exit(1);
+//     }
 
-int main(int argc, char** argv) {
+//     std::string line;
+//     std::getline(file, line); // Skip header
 
-    
+//     int row = 0;
+//     while (std::getline(file, line) && row < num_rows)
+//     {
+//         std::stringstream ss(line);
+//         std::string value;
+//         int col = 0;
+
+//         while (std::getline(ss, value, ',') && col < num_cols)
+//         {
+//             int v = std::stoi(value);
+//             relation.columns[col][row] = Integer(32, v, party);
+//             ++col;
+//         }
+
+//         relation.flags[row] = Integer(1, 1, party);
+//         ++row;
+//     }
+
+//     if (row < num_rows)
+//     {
+//         std::cerr << "Warning: CSV had fewer rows than expected. Only " << row << " rows were read." << std::endl;
+//     }
+
+//     file.close();
+// }
+
+int main(int argc, char **argv)
+{
+
     int port, party;
     parse_party_and_port(argv, &party, &port);
 
-    NetIO* io = new NetIO(party == ALICE ? nullptr : "127.0.0.1", port);
+    NetIO *io = new NetIO(party == ALICE ? nullptr : "127.0.0.1", port);
     setup_semi_honest(io, party);
 
-   
-    const int num_cols = 3;  // 3 columns
+    const int num_cols = 3; // 3 columns
     const int num_rows = 1 << 4;
-    //const int num_rows = 1 << 12;  // Around a million rows
-    
+    // const int num_rows = 1 << 12;  // Around a million rows
+
     SecureRelation relation(num_cols, num_rows);
-    init_relation(relation, num_cols, num_rows);
+    // init_relation(relation, num_cols, num_rows);
+
+    std::string csv_file = "normal_data.csv"; // Match filename from Python script
+    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     auto start_time = std::chrono::high_resolution_clock::now();
 
@@ -49,15 +91,14 @@ int main(int argc, char** argv) {
     io->flush();
 
     SecureRelation relation2(num_cols, num_rows);
-    init_relation(relation2, num_cols, num_rows);
+    // init_relation(relation2, num_cols, num_rows);
+    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     start_time = std::chrono::high_resolution_clock::now();
 
     // Filter based on an input column (comparing first and second columns)
     FilterOperator filter_by_column(0, relation2.columns[1], "gt");
     SecureRelation filtered_relation2 = filter_by_column.execute(relation2);
-
-
 
     end_time = std::chrono::high_resolution_clock::now();
     auto duration_filter_by_column = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
@@ -66,7 +107,8 @@ int main(int argc, char** argv) {
 
     // Two times selection over a base relation
     SecureRelation relation3(num_cols, num_rows);
-    init_relation(relation3, num_cols, num_rows);
+    // init_relation(relation3, num_cols, num_rows);
+    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     start_time = std::chrono::high_resolution_clock::now();
 
@@ -85,7 +127,6 @@ int main(int argc, char** argv) {
     delete io;
     return 0;
 }
-
 
 /*SQL query:
 select * from rel1, rel2 where rel1.col1<300 and rel1.col2=rel2.col2*/
