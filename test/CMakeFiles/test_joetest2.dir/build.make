@@ -98,6 +98,8 @@ bin/test_joetest2: test/CMakeFiles/test_joetest2.dir/build.make
 bin/test_joetest2: /usr/local/lib/libemp-tool.dylib
 bin/test_joetest2: /opt/homebrew/opt/openssl/lib/libssl.dylib
 bin/test_joetest2: /opt/homebrew/opt/openssl/lib/libcrypto.dylib
+bin/test_joetest2: /usr/local/lib/libpqxx.a
+bin/test_joetest2: /opt/homebrew/opt/libpq/lib/libpq.dylib
 bin/test_joetest2: test/CMakeFiles/test_joetest2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/test_joetest2"
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_joetest2.dir/link.txt --verbose=$(VERBOSE)

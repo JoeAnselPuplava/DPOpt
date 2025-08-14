@@ -63,6 +63,8 @@ int main(int argc, char **argv)
 
     // Filter r1.c1 = someValue
     FilterOperator filter_r1(1, Integer(32, someValue, ALICE), "eq");
+    // FilterOperatorSyscat filter_r1(1, Integer(32, someValue, ALICE), "eq");
+    // planNode select1(&f1, &rel1);
     SecureRelation r1_filtered = filter_r1.execute(r1);
 
     // Filter r2.c1 = someValue

@@ -968,10 +968,68 @@ test/CMakeFiles/test_joetest.dir/joetest.cpp.o: \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/op_scanner.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/relation.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/_op_unary.hpp \
+  /usr/local/include/pqxx/pqxx /usr/local/include/pqxx/array \
+  /usr/local/include/pqxx/array.hxx \
+  /usr/local/include/pqxx/compiler-public.hxx \
+  /usr/local/include/pqxx/config-public-compiler.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/ciso646 \
+  /usr/local/include/pqxx/compiler-internal-pre.hxx \
+  /usr/local/include/pqxx/internal/encoding_group.hxx \
+  /usr/local/include/pqxx/internal/encodings.hxx \
+  /usr/local/include/pqxx/compiler-internal-post.hxx \
+  /usr/local/include/pqxx/binarystring \
+  /usr/local/include/pqxx/binarystring.hxx \
+  /usr/local/include/pqxx/result.hxx /usr/local/include/pqxx/except.hxx \
+  /usr/local/include/pqxx/util.hxx /usr/local/include/pqxx/strconv.hxx \
+  /usr/local/include/pqxx/internal/libpq-forward.hxx \
+  /usr/local/include/pqxx/types.hxx /usr/local/include/pqxx/connection \
+  /usr/local/include/pqxx/connection.hxx \
+  /usr/local/include/pqxx/connectionpolicy.hxx \
+  /usr/local/include/pqxx/basic_connection.hxx \
+  /usr/local/include/pqxx/connection_base.hxx \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/map \
+  /usr/local/include/pqxx/errorhandler.hxx \
+  /usr/local/include/pqxx/prepared_statement.hxx \
+  /usr/local/include/pqxx/internal/statement_parameters.hxx \
+  /usr/local/include/pqxx/strconv /usr/local/include/pqxx/util \
+  /usr/local/include/pqxx/internal/type_utils.hxx \
+  /usr/local/include/pqxx/version.hxx \
+  /usr/local/include/pqxx/internal/ignore-deprecated-pre.hxx \
+  /usr/local/include/pqxx/internal/ignore-deprecated-post.hxx \
+  /usr/local/include/pqxx/cursor /usr/local/include/pqxx/cursor.hxx \
+  /usr/local/include/pqxx/transaction_base.hxx \
+  /usr/local/include/pqxx/isolation.hxx /usr/local/include/pqxx/row.hxx \
+  /usr/local/include/pqxx/field.hxx \
+  /usr/local/include/pqxx/internal/sql_cursor.hxx \
+  /usr/local/include/pqxx/errorhandler /usr/local/include/pqxx/except \
+  /usr/local/include/pqxx/largeobject \
+  /usr/local/include/pqxx/largeobject.hxx \
+  /usr/local/include/pqxx/dbtransaction.hxx \
+  /usr/local/include/pqxx/nontransaction \
+  /usr/local/include/pqxx/nontransaction.hxx \
+  /usr/local/include/pqxx/notification \
+  /usr/local/include/pqxx/notification.hxx \
+  /usr/local/include/pqxx/pipeline /usr/local/include/pqxx/pipeline.hxx \
+  /usr/local/include/pqxx/prepared_statement \
+  /usr/local/include/pqxx/result \
+  /usr/local/include/pqxx/result_iterator.hxx \
+  /usr/local/include/pqxx/robusttransaction \
+  /usr/local/include/pqxx/robusttransaction.hxx \
+  /usr/local/include/pqxx/stream_from \
+  /usr/local/include/pqxx/stream_from.hxx \
+  /usr/local/include/pqxx/stream_base.hxx \
+  /usr/local/include/pqxx/stream_to \
+  /usr/local/include/pqxx/stream_to.hxx \
+  /usr/local/include/pqxx/subtransaction \
+  /usr/local/include/pqxx/subtransaction.hxx \
+  /usr/local/include/pqxx/transaction \
+  /usr/local/include/pqxx/transaction.hxx \
+  /usr/local/include/pqxx/transactor \
+  /usr/local/include/pqxx/transactor.hxx \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/op_filter.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/op_equijoin.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/_op_binary.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/op_idx_equijoin.hpp \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/stats.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk/usr/include/c++/v1/map \
   /Users/joepuplava/Documents/Bater_Research/DPOpt/core/plan_node.hpp

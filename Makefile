@@ -250,6 +250,58 @@ test_template4/fast:
 .PHONY : test_template4/fast
 
 #=============================================================================
+# Target rules for targets named test_template1Test
+
+# Build rule for target.
+test_template1Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_template1Test
+.PHONY : test_template1Test
+
+# fast build rule for target.
+test_template1Test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/build
+.PHONY : test_template1Test/fast
+
+#=============================================================================
+# Target rules for targets named test_template2Test
+
+# Build rule for target.
+test_template2Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_template2Test
+.PHONY : test_template2Test
+
+# fast build rule for target.
+test_template2Test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/build
+.PHONY : test_template2Test/fast
+
+#=============================================================================
+# Target rules for targets named test_template3Test
+
+# Build rule for target.
+test_template3Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_template3Test
+.PHONY : test_template3Test
+
+# fast build rule for target.
+test_template3Test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/build
+.PHONY : test_template3Test/fast
+
+#=============================================================================
+# Target rules for targets named test_template4Test
+
+# Build rule for target.
+test_template4Test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_template4Test
+.PHONY : test_template4Test
+
+# fast build rule for target.
+test_template4Test/fast:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/build
+.PHONY : test_template4Test/fast
+
+#=============================================================================
 # Target rules for targets named exp_q1
 
 # Build rule for target.
@@ -685,9 +737,13 @@ help:
 	@echo "... test_joetest"
 	@echo "... test_joetest2"
 	@echo "... test_template1"
+	@echo "... test_template1Test"
 	@echo "... test_template2"
+	@echo "... test_template2Test"
 	@echo "... test_template3"
+	@echo "... test_template3Test"
 	@echo "... test_template4"
+	@echo "... test_template4Test"
 .PHONY : help
 
 

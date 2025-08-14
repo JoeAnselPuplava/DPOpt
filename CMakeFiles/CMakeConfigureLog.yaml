@@ -14313,3 +14313,1110 @@ events:
       variable: "RDSEED_RUN_RESULT_EXITCODE"
       cached: true
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-TDn1NR"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-TDn1NR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-TDn1NR'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6e424/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6e424.dir/build.make CMakeFiles/cmTC_6e424.dir/build
+        Building C object CMakeFiles/cmTC_6e424.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_6e424.dir/src.c.o -MF CMakeFiles/cmTC_6e424.dir/src.c.o.d -o CMakeFiles/cmTC_6e424.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-TDn1NR/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_6e424.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_6e424/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0Iug8j"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0Iug8j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0Iug8j'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_00618/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_00618.dir/build.make CMakeFiles/cmTC_00618.dir/build
+        Building C object CMakeFiles/cmTC_00618.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_00618.dir/src.c.o -MF CMakeFiles/cmTC_00618.dir/src.c.o.d -o CMakeFiles/cmTC_00618.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0Iug8j/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_00618.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_00618/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-PvQ4Tv"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-PvQ4Tv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-PvQ4Tv'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_56c69/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_56c69.dir/build.make CMakeFiles/cmTC_56c69.dir/build
+        Building C object CMakeFiles/cmTC_56c69.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_56c69.dir/src.c.o -MF CMakeFiles/cmTC_56c69.dir/src.c.o.d -o CMakeFiles/cmTC_56c69.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-PvQ4Tv/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_56c69.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_56c69/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-vXFGts"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-vXFGts"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-vXFGts'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_d087e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d087e.dir/build.make CMakeFiles/cmTC_d087e.dir/build
+        Building C object CMakeFiles/cmTC_d087e.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_d087e.dir/src.c.o -MF CMakeFiles/cmTC_d087e.dir/src.c.o.d -o CMakeFiles/cmTC_d087e.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-vXFGts/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_d087e.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_d087e/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-IPsQKb"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-IPsQKb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-IPsQKb'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ce9d7/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ce9d7.dir/build.make CMakeFiles/cmTC_ce9d7.dir/build
+        Building C object CMakeFiles/cmTC_ce9d7.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_ce9d7.dir/src.c.o -MF CMakeFiles/cmTC_ce9d7.dir/src.c.o.d -o CMakeFiles/cmTC_ce9d7.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-IPsQKb/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_ce9d7.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_ce9d7/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-jkgyVO"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-jkgyVO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-jkgyVO'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5420c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5420c.dir/build.make CMakeFiles/cmTC_5420c.dir/build
+        Building C object CMakeFiles/cmTC_5420c.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_5420c.dir/src.c.o -MF CMakeFiles/cmTC_5420c.dir/src.c.o.d -o CMakeFiles/cmTC_5420c.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-jkgyVO/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_5420c.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_5420c/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SHFbbW"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SHFbbW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SHFbbW'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_0b671/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0b671.dir/build.make CMakeFiles/cmTC_0b671.dir/build
+        Building C object CMakeFiles/cmTC_0b671.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_0b671.dir/src.c.o -MF CMakeFiles/cmTC_0b671.dir/src.c.o.d -o CMakeFiles/cmTC_0b671.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SHFbbW/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_0b671.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_0b671/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-m6Jddr"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-m6Jddr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-m6Jddr'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f6c4d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f6c4d.dir/build.make CMakeFiles/cmTC_f6c4d.dir/build
+        Building C object CMakeFiles/cmTC_f6c4d.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_f6c4d.dir/src.c.o -MF CMakeFiles/cmTC_f6c4d.dir/src.c.o.d -o CMakeFiles/cmTC_f6c4d.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-m6Jddr/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_f6c4d.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_f6c4d/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-EliCLw"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-EliCLw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-EliCLw'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_60016/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_60016.dir/build.make CMakeFiles/cmTC_60016.dir/build
+        Building C object CMakeFiles/cmTC_60016.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_60016.dir/src.c.o -MF CMakeFiles/cmTC_60016.dir/src.c.o.d -o CMakeFiles/cmTC_60016.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-EliCLw/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_60016.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_60016/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-FXoBLo"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-FXoBLo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-FXoBLo'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5abda/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5abda.dir/build.make CMakeFiles/cmTC_5abda.dir/build
+        Building C object CMakeFiles/cmTC_5abda.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_5abda.dir/src.c.o -MF CMakeFiles/cmTC_5abda.dir/src.c.o.d -o CMakeFiles/cmTC_5abda.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-FXoBLo/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_5abda.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_5abda/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-5ZXIFR"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-5ZXIFR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-5ZXIFR'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_f202c/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_f202c.dir/build.make CMakeFiles/cmTC_f202c.dir/build
+        Building C object CMakeFiles/cmTC_f202c.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_f202c.dir/src.c.o -MF CMakeFiles/cmTC_f202c.dir/src.c.o.d -o CMakeFiles/cmTC_f202c.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-5ZXIFR/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_f202c.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_f202c/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-eBpXsd"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-eBpXsd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-eBpXsd'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_61815/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_61815.dir/build.make CMakeFiles/cmTC_61815.dir/build
+        Building C object CMakeFiles/cmTC_61815.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_61815.dir/src.c.o -MF CMakeFiles/cmTC_61815.dir/src.c.o.d -o CMakeFiles/cmTC_61815.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-eBpXsd/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_61815.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_61815/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Nq0mcx"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Nq0mcx"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Nq0mcx'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_44f8d/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_44f8d.dir/build.make CMakeFiles/cmTC_44f8d.dir/build
+        Building C object CMakeFiles/cmTC_44f8d.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_44f8d.dir/src.c.o -MF CMakeFiles/cmTC_44f8d.dir/src.c.o.d -o CMakeFiles/cmTC_44f8d.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Nq0mcx/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_44f8d.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_44f8d/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-sVHxtW"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-sVHxtW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-sVHxtW'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_86901/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_86901.dir/build.make CMakeFiles/cmTC_86901.dir/build
+        Building C object CMakeFiles/cmTC_86901.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_86901.dir/src.c.o -MF CMakeFiles/cmTC_86901.dir/src.c.o.d -o CMakeFiles/cmTC_86901.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-sVHxtW/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_86901.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_86901/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-L2nj0J"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-L2nj0J"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-L2nj0J'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_62dd8/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_62dd8.dir/build.make CMakeFiles/cmTC_62dd8.dir/build
+        Building C object CMakeFiles/cmTC_62dd8.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_62dd8.dir/src.c.o -MF CMakeFiles/cmTC_62dd8.dir/src.c.o.d -o CMakeFiles/cmTC_62dd8.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-L2nj0J/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_62dd8.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_62dd8/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-NIfRgJ"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-NIfRgJ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-NIfRgJ'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_baebd/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_baebd.dir/build.make CMakeFiles/cmTC_baebd.dir/build
+        Building C object CMakeFiles/cmTC_baebd.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_baebd.dir/src.c.o -MF CMakeFiles/cmTC_baebd.dir/src.c.o.d -o CMakeFiles/cmTC_baebd.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-NIfRgJ/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_baebd.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_baebd/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-d2C68j"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-d2C68j"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-d2C68j'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e4821/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_e4821.dir/build.make CMakeFiles/cmTC_e4821.dir/build
+        Building C object CMakeFiles/cmTC_e4821.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_e4821.dir/src.c.o -MF CMakeFiles/cmTC_e4821.dir/src.c.o.d -o CMakeFiles/cmTC_e4821.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-d2C68j/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_e4821.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_e4821/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-zZWepn"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-zZWepn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-zZWepn'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_6b520/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6b520.dir/build.make CMakeFiles/cmTC_6b520.dir/build
+        Building C object CMakeFiles/cmTC_6b520.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_6b520.dir/src.c.o -MF CMakeFiles/cmTC_6b520.dir/src.c.o.d -o CMakeFiles/cmTC_6b520.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-zZWepn/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_6b520.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_6b520/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Q6fZ55"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Q6fZ55"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Q6fZ55'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_35e0a/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_35e0a.dir/build.make CMakeFiles/cmTC_35e0a.dir/build
+        Building C object CMakeFiles/cmTC_35e0a.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_35e0a.dir/src.c.o -MF CMakeFiles/cmTC_35e0a.dir/src.c.o.d -o CMakeFiles/cmTC_35e0a.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-Q6fZ55/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_35e0a.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_35e0a/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0CUKPe"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0CUKPe"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0CUKPe'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_ca3f6/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_ca3f6.dir/build.make CMakeFiles/cmTC_ca3f6.dir/build
+        Building C object CMakeFiles/cmTC_ca3f6.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_ca3f6.dir/src.c.o -MF CMakeFiles/cmTC_ca3f6.dir/src.c.o.d -o CMakeFiles/cmTC_ca3f6.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-0CUKPe/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_ca3f6.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_ca3f6/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-7QEpEw"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-7QEpEw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-7QEpEw'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3d15e/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3d15e.dir/build.make CMakeFiles/cmTC_3d15e.dir/build
+        Building C object CMakeFiles/cmTC_3d15e.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_3d15e.dir/src.c.o -MF CMakeFiles/cmTC_3d15e.dir/src.c.o.d -o CMakeFiles/cmTC_3d15e.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-7QEpEw/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_3d15e.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_3d15e/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-imGCr2"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-imGCr2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-imGCr2'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_cb1ae/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_cb1ae.dir/build.make CMakeFiles/cmTC_cb1ae.dir/build
+        Building C object CMakeFiles/cmTC_cb1ae.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_cb1ae.dir/src.c.o -MF CMakeFiles/cmTC_cb1ae.dir/src.c.o.d -o CMakeFiles/cmTC_cb1ae.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-imGCr2/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_cb1ae.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_cb1ae/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-n7T2a5"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-n7T2a5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-n7T2a5'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_75e63/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_75e63.dir/build.make CMakeFiles/cmTC_75e63.dir/build
+        Building C object CMakeFiles/cmTC_75e63.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_75e63.dir/src.c.o -MF CMakeFiles/cmTC_75e63.dir/src.c.o.d -o CMakeFiles/cmTC_75e63.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-n7T2a5/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_75e63.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_75e63/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-iBtvxw"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-iBtvxw"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-iBtvxw'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_dbd62/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_dbd62.dir/build.make CMakeFiles/cmTC_dbd62.dir/build
+        Building C object CMakeFiles/cmTC_dbd62.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_dbd62.dir/src.c.o -MF CMakeFiles/cmTC_dbd62.dir/src.c.o.d -o CMakeFiles/cmTC_dbd62.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-iBtvxw/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_dbd62.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_dbd62/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SnX314"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SnX314"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SnX314'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_5d5eb/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_5d5eb.dir/build.make CMakeFiles/cmTC_5d5eb.dir/build
+        Building C object CMakeFiles/cmTC_5d5eb.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_5d5eb.dir/src.c.o -MF CMakeFiles/cmTC_5d5eb.dir/src.c.o.d -o CMakeFiles/cmTC_5d5eb.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-SnX314/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_5d5eb.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_5d5eb/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-RO1DdF"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-RO1DdF"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-RO1DdF'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9f489/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_9f489.dir/build.make CMakeFiles/cmTC_9f489.dir/build
+        Building C object CMakeFiles/cmTC_9f489.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_9f489.dir/src.c.o -MF CMakeFiles/cmTC_9f489.dir/src.c.o.d -o CMakeFiles/cmTC_9f489.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-RO1DdF/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_9f489.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_9f489/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "/usr/local/cmake/enable_rdseed.cmake:9 (check_c_source_runs)"
+      - "/usr/local/cmake/emp-base.cmake:69 (include)"
+      - "CMakeLists.txt:9 (include)"
+    checks:
+      - "Performing Test RDSEED_RUN_RESULT"
+    directories:
+      source: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-tuXv0c"
+      binary: "/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-tuXv0c"
+    cmakeVariables:
+      CMAKE_C_FLAGS: " -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc"
+      CMAKE_MODULE_PATH: "/Users/joepuplava/Documents/Bater_Research/DPOpt/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk"
+    buildResult:
+      variable: "RDSEED_RUN_RESULT_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-tuXv0c'
+        
+        Run Build Command(s): /Users/joepuplava/Downloads/cmake-3.31.8-macos-universal/CMake.app/Contents/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_49531/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_49531.dir/build.make CMakeFiles/cmTC_49531.dir/build
+        Building C object CMakeFiles/cmTC_49531.dir/src.c.o
+        /Library/Developer/CommandLineTools/usr/bin/cc -DRDSEED_RUN_RESULT  -pthread -Wall -funroll-loops -Wno-ignored-attributes -Wno-unused-result -march=armv8-a+simd+crypto+crc -mrdseed -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.5.sdk -MD -MT CMakeFiles/cmTC_49531.dir/src.c.o -MF CMakeFiles/cmTC_49531.dir/src.c.o.d -o CMakeFiles/cmTC_49531.dir/src.c.o -c /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles/CMakeScratch/TryCompile-tuXv0c/src.c
+        cc: error: unsupported option '-mrdseed' for target 'arm64-apple-darwin24.6.0'
+        make[2]: *** [CMakeFiles/cmTC_49531.dir/src.c.o] Error 1
+        make[1]: *** [cmTC_49531/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RDSEED_RUN_RESULT_EXITCODE"
+      cached: true
+...

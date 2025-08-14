@@ -255,6 +255,62 @@ test_template4/fast:
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/build
 .PHONY : test_template4/fast
 
+# Convenience name for target.
+test/CMakeFiles/test_template1Test.dir/rule:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template1Test.dir/rule
+.PHONY : test/CMakeFiles/test_template1Test.dir/rule
+
+# Convenience name for target.
+test_template1Test: test/CMakeFiles/test_template1Test.dir/rule
+.PHONY : test_template1Test
+
+# fast build rule for target.
+test_template1Test/fast:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/build
+.PHONY : test_template1Test/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_template2Test.dir/rule:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template2Test.dir/rule
+.PHONY : test/CMakeFiles/test_template2Test.dir/rule
+
+# Convenience name for target.
+test_template2Test: test/CMakeFiles/test_template2Test.dir/rule
+.PHONY : test_template2Test
+
+# fast build rule for target.
+test_template2Test/fast:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/build
+.PHONY : test_template2Test/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_template3Test.dir/rule:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template3Test.dir/rule
+.PHONY : test/CMakeFiles/test_template3Test.dir/rule
+
+# Convenience name for target.
+test_template3Test: test/CMakeFiles/test_template3Test.dir/rule
+.PHONY : test_template3Test
+
+# fast build rule for target.
+test_template3Test/fast:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/build
+.PHONY : test_template3Test/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_template4Test.dir/rule:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template4Test.dir/rule
+.PHONY : test/CMakeFiles/test_template4Test.dir/rule
+
+# Convenience name for target.
+test_template4Test: test/CMakeFiles/test_template4Test.dir/rule
+.PHONY : test_template4Test
+
+# fast build rule for target.
+test_template4Test/fast:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/build
+.PHONY : test_template4Test/fast
+
 joetest.o: joetest.cpp.o
 .PHONY : joetest.o
 
@@ -327,6 +383,30 @@ template1.cpp.s:
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1.dir/build.make test/CMakeFiles/test_template1.dir/template1.cpp.s
 .PHONY : template1.cpp.s
 
+template1Test.o: template1Test.cpp.o
+.PHONY : template1Test.o
+
+# target to build an object file
+template1Test.cpp.o:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/template1Test.cpp.o
+.PHONY : template1Test.cpp.o
+
+template1Test.i: template1Test.cpp.i
+.PHONY : template1Test.i
+
+# target to preprocess a source file
+template1Test.cpp.i:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/template1Test.cpp.i
+.PHONY : template1Test.cpp.i
+
+template1Test.s: template1Test.cpp.s
+.PHONY : template1Test.s
+
+# target to generate assembly for a file
+template1Test.cpp.s:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/template1Test.cpp.s
+.PHONY : template1Test.cpp.s
+
 template2.o: template2.cpp.o
 .PHONY : template2.o
 
@@ -350,6 +430,30 @@ template2.s: template2.cpp.s
 template2.cpp.s:
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2.dir/build.make test/CMakeFiles/test_template2.dir/template2.cpp.s
 .PHONY : template2.cpp.s
+
+template2Test.o: template2Test.cpp.o
+.PHONY : template2Test.o
+
+# target to build an object file
+template2Test.cpp.o:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/template2Test.cpp.o
+.PHONY : template2Test.cpp.o
+
+template2Test.i: template2Test.cpp.i
+.PHONY : template2Test.i
+
+# target to preprocess a source file
+template2Test.cpp.i:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/template2Test.cpp.i
+.PHONY : template2Test.cpp.i
+
+template2Test.s: template2Test.cpp.s
+.PHONY : template2Test.s
+
+# target to generate assembly for a file
+template2Test.cpp.s:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/template2Test.cpp.s
+.PHONY : template2Test.cpp.s
 
 template3.o: template3.cpp.o
 .PHONY : template3.o
@@ -375,6 +479,30 @@ template3.cpp.s:
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3.dir/build.make test/CMakeFiles/test_template3.dir/template3.cpp.s
 .PHONY : template3.cpp.s
 
+template3Test.o: template3Test.cpp.o
+.PHONY : template3Test.o
+
+# target to build an object file
+template3Test.cpp.o:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/template3Test.cpp.o
+.PHONY : template3Test.cpp.o
+
+template3Test.i: template3Test.cpp.i
+.PHONY : template3Test.i
+
+# target to preprocess a source file
+template3Test.cpp.i:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/template3Test.cpp.i
+.PHONY : template3Test.cpp.i
+
+template3Test.s: template3Test.cpp.s
+.PHONY : template3Test.s
+
+# target to generate assembly for a file
+template3Test.cpp.s:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/template3Test.cpp.s
+.PHONY : template3Test.cpp.s
+
 template4.o: template4.cpp.o
 .PHONY : template4.o
 
@@ -399,6 +527,30 @@ template4.cpp.s:
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/template4.cpp.s
 .PHONY : template4.cpp.s
 
+template4Test.o: template4Test.cpp.o
+.PHONY : template4Test.o
+
+# target to build an object file
+template4Test.cpp.o:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/template4Test.cpp.o
+.PHONY : template4Test.cpp.o
+
+template4Test.i: template4Test.cpp.i
+.PHONY : template4Test.i
+
+# target to preprocess a source file
+template4Test.cpp.i:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/template4Test.cpp.i
+.PHONY : template4Test.cpp.i
+
+template4Test.s: template4Test.cpp.s
+.PHONY : template4Test.s
+
+# target to generate assembly for a file
+template4Test.cpp.s:
+	cd /Users/joepuplava/Documents/Bater_Research/DPOpt && $(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/template4Test.cpp.s
+.PHONY : template4Test.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -415,9 +567,13 @@ help:
 	@echo "... test_joetest"
 	@echo "... test_joetest2"
 	@echo "... test_template1"
+	@echo "... test_template1Test"
 	@echo "... test_template2"
+	@echo "... test_template2Test"
 	@echo "... test_template3"
+	@echo "... test_template3Test"
 	@echo "... test_template4"
+	@echo "... test_template4Test"
 	@echo "... joetest.o"
 	@echo "... joetest.i"
 	@echo "... joetest.s"
@@ -427,15 +583,27 @@ help:
 	@echo "... template1.o"
 	@echo "... template1.i"
 	@echo "... template1.s"
+	@echo "... template1Test.o"
+	@echo "... template1Test.i"
+	@echo "... template1Test.s"
 	@echo "... template2.o"
 	@echo "... template2.i"
 	@echo "... template2.s"
+	@echo "... template2Test.o"
+	@echo "... template2Test.i"
+	@echo "... template2Test.s"
 	@echo "... template3.o"
 	@echo "... template3.i"
 	@echo "... template3.s"
+	@echo "... template3Test.o"
+	@echo "... template3Test.i"
+	@echo "... template3Test.s"
 	@echo "... template4.o"
 	@echo "... template4.i"
 	@echo "... template4.s"
+	@echo "... template4Test.o"
+	@echo "... template4Test.i"
+	@echo "... template4Test.s"
 .PHONY : help
 
 

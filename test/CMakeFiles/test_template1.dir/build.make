@@ -98,6 +98,8 @@ bin/test_template1: test/CMakeFiles/test_template1.dir/build.make
 bin/test_template1: /usr/local/lib/libemp-tool.dylib
 bin/test_template1: /opt/homebrew/opt/openssl/lib/libssl.dylib
 bin/test_template1: /opt/homebrew/opt/openssl/lib/libcrypto.dylib
+bin/test_template1: /usr/local/lib/libpqxx.a
+bin/test_template1: /opt/homebrew/opt/libpq/lib/libpq.dylib
 bin/test_template1: test/CMakeFiles/test_template1.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/test_template1"
 	cd /Users/joepuplava/Documents/Bater_Research/DPOpt/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_template1.dir/link.txt --verbose=$(VERBOSE)

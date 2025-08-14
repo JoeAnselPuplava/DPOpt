@@ -219,6 +219,15 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 //Enable computing various crypto operations in circuit
 CRYPTO_IN_CIRCUIT:BOOL=OFF
 
+//Value Computed by CMake
+DPOptTests_BINARY_DIR:STATIC=/Users/joepuplava/Documents/Bater_Research/DPOpt/test
+
+//Value Computed by CMake
+DPOptTests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+DPOptTests_SOURCE_DIR:STATIC=/Users/joepuplava/Documents/Bater_Research/DPOpt/test
+
 //Path to a file.
 EMP-OT_INCLUDE_DIR:PATH=/usr/local/include
 
@@ -242,6 +251,9 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/opt/homebrew/bin/pkg-config
+
+//Path to a library.
+PQXX_LIB:FILEPATH=/usr/local/lib/libpqxx.a
 
 //Enable multi-threaded backend
 THREADING:BOOL=OFF

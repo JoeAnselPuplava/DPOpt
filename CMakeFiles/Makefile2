@@ -198,6 +198,10 @@ test/all: test/CMakeFiles/test_template1.dir/all
 test/all: test/CMakeFiles/test_template2.dir/all
 test/all: test/CMakeFiles/test_template3.dir/all
 test/all: test/CMakeFiles/test_template4.dir/all
+test/all: test/CMakeFiles/test_template1Test.dir/all
+test/all: test/CMakeFiles/test_template2Test.dir/all
+test/all: test/CMakeFiles/test_template3Test.dir/all
+test/all: test/CMakeFiles/test_template4Test.dir/all
 .PHONY : test/all
 
 # Recursive "codegen" directory target.
@@ -207,6 +211,10 @@ test/codegen: test/CMakeFiles/test_template1.dir/codegen
 test/codegen: test/CMakeFiles/test_template2.dir/codegen
 test/codegen: test/CMakeFiles/test_template3.dir/codegen
 test/codegen: test/CMakeFiles/test_template4.dir/codegen
+test/codegen: test/CMakeFiles/test_template1Test.dir/codegen
+test/codegen: test/CMakeFiles/test_template2Test.dir/codegen
+test/codegen: test/CMakeFiles/test_template3Test.dir/codegen
+test/codegen: test/CMakeFiles/test_template4Test.dir/codegen
 .PHONY : test/codegen
 
 # Recursive "preinstall" directory target.
@@ -220,6 +228,10 @@ test/clean: test/CMakeFiles/test_template1.dir/clean
 test/clean: test/CMakeFiles/test_template2.dir/clean
 test/clean: test/CMakeFiles/test_template3.dir/clean
 test/clean: test/CMakeFiles/test_template4.dir/clean
+test/clean: test/CMakeFiles/test_template1Test.dir/clean
+test/clean: test/CMakeFiles/test_template2Test.dir/clean
+test/clean: test/CMakeFiles/test_template3Test.dir/clean
+test/clean: test/CMakeFiles/test_template4Test.dir/clean
 .PHONY : test/clean
 
 #=============================================================================
@@ -325,7 +337,7 @@ test/CMakeFiles/test_template1.dir/clean:
 test/CMakeFiles/test_template2.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2.dir/build.make test/CMakeFiles/test_template2.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2.dir/build.make test/CMakeFiles/test_template2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=67,68 "Built target test_template2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=69,70 "Built target test_template2"
 .PHONY : test/CMakeFiles/test_template2.dir/all
 
 # Build rule for subdir invocation for target.
@@ -342,7 +354,7 @@ test_template2: test/CMakeFiles/test_template2.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_template2.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2.dir/build.make test/CMakeFiles/test_template2.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=67,68 "Finished codegen for target test_template2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=69,70 "Finished codegen for target test_template2"
 .PHONY : test/CMakeFiles/test_template2.dir/codegen
 
 # clean rule for target.
@@ -357,7 +369,7 @@ test/CMakeFiles/test_template2.dir/clean:
 test/CMakeFiles/test_template3.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3.dir/build.make test/CMakeFiles/test_template3.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3.dir/build.make test/CMakeFiles/test_template3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=69,70 "Built target test_template3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=73,74 "Built target test_template3"
 .PHONY : test/CMakeFiles/test_template3.dir/all
 
 # Build rule for subdir invocation for target.
@@ -374,7 +386,7 @@ test_template3: test/CMakeFiles/test_template3.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_template3.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3.dir/build.make test/CMakeFiles/test_template3.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=69,70 "Finished codegen for target test_template3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=73,74 "Finished codegen for target test_template3"
 .PHONY : test/CMakeFiles/test_template3.dir/codegen
 
 # clean rule for target.
@@ -389,7 +401,7 @@ test/CMakeFiles/test_template3.dir/clean:
 test/CMakeFiles/test_template4.dir/all:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/depend
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=71,72 "Built target test_template4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=77,78 "Built target test_template4"
 .PHONY : test/CMakeFiles/test_template4.dir/all
 
 # Build rule for subdir invocation for target.
@@ -406,13 +418,141 @@ test_template4: test/CMakeFiles/test_template4.dir/rule
 # codegen rule for target.
 test/CMakeFiles/test_template4.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=71,72 "Finished codegen for target test_template4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=77,78 "Finished codegen for target test_template4"
 .PHONY : test/CMakeFiles/test_template4.dir/codegen
 
 # clean rule for target.
 test/CMakeFiles/test_template4.dir/clean:
 	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4.dir/build.make test/CMakeFiles/test_template4.dir/clean
 .PHONY : test/CMakeFiles/test_template4.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_template1Test.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_template1Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=67,68 "Built target test_template1Test"
+.PHONY : test/CMakeFiles/test_template1Test.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_template1Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template1Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_template1Test.dir/rule
+
+# Convenience name for target.
+test_template1Test: test/CMakeFiles/test_template1Test.dir/rule
+.PHONY : test_template1Test
+
+# codegen rule for target.
+test/CMakeFiles/test_template1Test.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=67,68 "Finished codegen for target test_template1Test"
+.PHONY : test/CMakeFiles/test_template1Test.dir/codegen
+
+# clean rule for target.
+test/CMakeFiles/test_template1Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template1Test.dir/build.make test/CMakeFiles/test_template1Test.dir/clean
+.PHONY : test/CMakeFiles/test_template1Test.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_template2Test.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_template2Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=71,72 "Built target test_template2Test"
+.PHONY : test/CMakeFiles/test_template2Test.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_template2Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template2Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_template2Test.dir/rule
+
+# Convenience name for target.
+test_template2Test: test/CMakeFiles/test_template2Test.dir/rule
+.PHONY : test_template2Test
+
+# codegen rule for target.
+test/CMakeFiles/test_template2Test.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=71,72 "Finished codegen for target test_template2Test"
+.PHONY : test/CMakeFiles/test_template2Test.dir/codegen
+
+# clean rule for target.
+test/CMakeFiles/test_template2Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template2Test.dir/build.make test/CMakeFiles/test_template2Test.dir/clean
+.PHONY : test/CMakeFiles/test_template2Test.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_template3Test.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_template3Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=75,76 "Built target test_template3Test"
+.PHONY : test/CMakeFiles/test_template3Test.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_template3Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template3Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_template3Test.dir/rule
+
+# Convenience name for target.
+test_template3Test: test/CMakeFiles/test_template3Test.dir/rule
+.PHONY : test_template3Test
+
+# codegen rule for target.
+test/CMakeFiles/test_template3Test.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=75,76 "Finished codegen for target test_template3Test"
+.PHONY : test/CMakeFiles/test_template3Test.dir/codegen
+
+# clean rule for target.
+test/CMakeFiles/test_template3Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template3Test.dir/build.make test/CMakeFiles/test_template3Test.dir/clean
+.PHONY : test/CMakeFiles/test_template3Test.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/test_template4Test.dir
+
+# All Build rule for target.
+test/CMakeFiles/test_template4Test.dir/all:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/depend
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=79,80 "Built target test_template4Test"
+.PHONY : test/CMakeFiles/test_template4Test.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/test_template4Test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_template4Test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles 0
+.PHONY : test/CMakeFiles/test_template4Test.dir/rule
+
+# Convenience name for target.
+test_template4Test: test/CMakeFiles/test_template4Test.dir/rule
+.PHONY : test_template4Test
+
+# codegen rule for target.
+test/CMakeFiles/test_template4Test.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/joepuplava/Documents/Bater_Research/DPOpt/CMakeFiles --progress-num=79,80 "Finished codegen for target test_template4Test"
+.PHONY : test/CMakeFiles/test_template4Test.dir/codegen
+
+# clean rule for target.
+test/CMakeFiles/test_template4Test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_template4Test.dir/build.make test/CMakeFiles/test_template4Test.dir/clean
+.PHONY : test/CMakeFiles/test_template4Test.dir/clean
 
 #=============================================================================
 # Target rules for target exp/CMakeFiles/exp_q1.dir

@@ -21,17 +21,11 @@ int main(int argc, char **argv)
 
     NetIO *io = new NetIO(party == ALICE ? nullptr : "127.0.0.1", port);
     setup_semi_honest(io, party);
-
-    // std::cout << "Got here 11\n";
-    std::string filename = "/Users/joepuplava/Documents/Bater_Research/DPOpt/normal_data.csv";
-
-    ScanOperator scanner(filename);
-
-    // std::cout << "Got here 22\n";
-    SecureRelation dummyInput(0, 0);
-    // std::cout << "Got here 33\n";
-
-    SecureRelation result = scanner.execute(dummyInput, party);
+    std::string connStr = "dbname=dpopt user=joepuplava password= hostaddr=127.0.0.1 port=5432";
+    std::string query = "SELECT * FROM my_table";
+    ScanOperator pgScan(connStr, query);
+    SecureRelation rel = pgScan.execute(SecureRelation());
+    rel.print_relation("Postgres Output");
     io->flush();
     delete io;
     // finalize_plain_prot();

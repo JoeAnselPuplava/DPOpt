@@ -32,14 +32,14 @@ int main(int argc, char **argv)
     SecureRelation dummyInput(0, 0);
     // std::cout << "Got here 33\n";
 
-    SecureRelation result = scanner.execute(dummyInput, party);
+    SecureRelation result = scanner.execute(dummyInput);
     // Add conditional to print
-    if (party == 1)
-    {
-        std::cout << party << "\n";
-        result.print_relation("Result from CSV Scan:");
-    }
-    // result.print_relation("Result from CSV Scan:");
+    // if (party == 1)
+    // {
+    //     std::cout << party << "\n";
+    //     result.print_relation("Result from CSV Scan:");
+    // }
+    result.print_relation("Result from CSV Scan:");
     io->flush();
     delete io;
     // finalize_plain_prot();
