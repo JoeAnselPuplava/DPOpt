@@ -65,20 +65,20 @@ int main(int argc, char **argv)
     // =========================
     // Implementation A: Original Joins
     // =========================
-    // auto startA = std::chrono::high_resolution_clock::now();
+    auto startA = std::chrono::high_resolution_clock::now();
 
-    // // Step 1: r1 JOIN r2 on r1.c1 = r2.c1
-    // EquiJoinOperator join1_A(1, 1);
-    // SecureRelation r1_r2_A = join1_A.execute(r1, r2);
+    // Step 1: r1 JOIN r2 on r1.c1 = r2.c1
+    EquiJoinOperator join1_A(1, 1);
+    SecureRelation r1_r2_A = join1_A.execute(r1, r2);
 
-    // // Step 2: r1_r2 JOIN r3 on r2.c2 = r3.c2
-    // EquiJoinOperator join2_A(5, 2);
-    // SecureRelation final_result_A = join2_A.execute(r1_r2_A, r3);
+    // Step 2: r1_r2 JOIN r3 on r2.c2 = r3.c2
+    EquiJoinOperator join2_A(5, 2);
+    SecureRelation final_result_A = join2_A.execute(r1_r2_A, r3);
 
     // auto endA = std::chrono::high_resolution_clock::now();
     // auto durationA = std::chrono::duration_cast<std::chrono::milliseconds>(endA - startA).count();
 
-    // final_result_A.print_relation("Implementation A (Original) Final Join Result:");
+    final_result_A.print_relation("Implementation A (FilterOperator) Result:");
     // std::cout << "Time A: " << durationA << " ms\n";
 
     // =========================
@@ -107,10 +107,10 @@ int main(int argc, char **argv)
     EquiJoinOperator join2_B(5, 2);
     SecureRelation final_result_B = join2_B.execute(r1_r2_B, r3_filtered);
 
-    auto endB = std::chrono::high_resolution_clock::now();
-    auto durationB = std::chrono::duration_cast<std::chrono::milliseconds>(endB - startB).count();
+    // auto endB = std::chrono::high_resolution_clock::now();
+    // auto durationB = std::chrono::duration_cast<std::chrono::milliseconds>(endB - startB).count();
 
-    final_result_B.print_relation("Implementation B (Syscat + planNode) Final Join Result:");
+    final_result_B.print_relation("Implementation B (FilterOperatorSyscat + planNode) Result:");
     // std::cout << "Time B: " << durationB << " ms\n";
 
     io->flush();

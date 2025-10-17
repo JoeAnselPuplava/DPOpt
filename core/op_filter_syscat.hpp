@@ -41,7 +41,7 @@ FilterOperatorSyscat::FilterOperatorSyscat(int col_idx, const std::vector<emp::I
     : column_index(col_idx), target_column(target_col), condition(cnd) {}
 
 FilterOperatorSyscat::FilterOperatorSyscat(int col_idx, const emp::Integer &target, const std::string &cnd, Stats *statistics)
-    : column_index(col_idx), target_value(target), condition(cnd), stats(statistics) {}
+    : column_index(col_idx), target_value(target), condition(cnd), stats(statistics) { get_stat(); }
 
 emp::Bit FilterOperatorSyscat::compare(const emp::Integer &a, const emp::Integer &b, const std::string &condition)
 {

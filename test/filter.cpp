@@ -77,7 +77,7 @@ int main(int argc, char **argv)
     // init_relation(relation, num_cols, num_rows);
 
     std::string csv_file = "normal_data.csv"; // Match filename from Python script
-    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
+    // init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     auto start_time = std::chrono::high_resolution_clock::now();
 
@@ -92,7 +92,7 @@ int main(int argc, char **argv)
 
     SecureRelation relation2(num_cols, num_rows);
     // init_relation(relation2, num_cols, num_rows);
-    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
+    // init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     start_time = std::chrono::high_resolution_clock::now();
 
@@ -108,7 +108,7 @@ int main(int argc, char **argv)
     // Two times selection over a base relation
     SecureRelation relation3(num_cols, num_rows);
     // init_relation(relation3, num_cols, num_rows);
-    init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
+    // init_relation_from_csv(relation, csv_file, num_cols, num_rows, party);
 
     start_time = std::chrono::high_resolution_clock::now();
 

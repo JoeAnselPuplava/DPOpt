@@ -71,21 +71,21 @@ int main(int argc, char **argv)
     // =========================
     // Implementation A: Original Joins
     // =========================
-    // auto startA = std::chrono::high_resolution_clock::now();
+    auto startA = std::chrono::high_resolution_clock::now();
 
-    // EquiJoinOperator join1_A(1, 1);
-    // SecureRelation r1_r2_A = join1_A.execute(r1, r2);
+    EquiJoinOperator join1_A(1, 1);
+    SecureRelation r1_r2_A = join1_A.execute(r1, r2);
 
-    // EquiJoinOperator join2_A(2, 2);
-    // SecureRelation r1_r2_r3_A = join2_A.execute(r1_r2_A, r3);
+    EquiJoinOperator join2_A(2, 2);
+    SecureRelation r1_r2_r3_A = join2_A.execute(r1_r2_A, r3);
 
-    // EquiJoinOperator join3_A(5, 2);
-    // SecureRelation final_result_A = join3_A.execute(r1_r2_r3_A, r4);
+    EquiJoinOperator join3_A(5, 2);
+    SecureRelation final_result_A = join3_A.execute(r1_r2_r3_A, r4);
 
-    // auto endA = std::chrono::high_resolution_clock::now();
-    // auto durationA = std::chrono::duration_cast<std::chrono::milliseconds>(endA - startA).count();
+    auto endA = std::chrono::high_resolution_clock::now();
+    auto durationA = std::chrono::duration_cast<std::chrono::milliseconds>(endA - startA).count();
 
-    // final_result_A.print_relation("Implementation A (Original) Final Join Result:");
+    final_result_A.print_relation("Implementation A (FilterOperator) Result:");
     // std::cout << "Time A: " << durationA << " ms\n";
 
     // =========================
@@ -125,7 +125,7 @@ int main(int argc, char **argv)
     auto endB = std::chrono::high_resolution_clock::now();
     auto durationB = std::chrono::duration_cast<std::chrono::milliseconds>(endB - startB).count();
 
-    final_result_B.print_relation("Implementation B (Syscat + planNode) Final Join Result:");
+    final_result_B.print_relation("Implementation B (FilterOperatorSyscat + planNode) Result:");
     // std::cout << "Time B: " << durationB << " ms\n";
 
     io->flush();
